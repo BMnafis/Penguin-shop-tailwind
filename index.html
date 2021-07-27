@@ -1,48 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Shop</title>
     <!-- tailwind css -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header-section w-full bg-yellow-50">
-        <!-- Navigation section -->
-        <div class="nav-bar w-10/12 mx-auto flex justify-between py-5 items-center">
-            <div class="left-logo">
-                <img class="w-72" src="icons/logo.png" alt="">
+      <!-- Navigation section -->
+      <div
+        class="nav-bar w-10/12 mx-auto flex justify-between py-5 items-center"
+      >
+        <div class="left-logo">
+          <img class="w-72" src="icons/logo.png" alt="" />
+        </div>
+        <div class="right-nav flex gap-10 font-medium text-gray-700">
+          <a href="#" class="menu-item">Home</a>
+          <a href="#" class="menu-item">Product</a>
+          <a href="#" class="menu-item">About Us</a>
+          <a href="#" class="menu-item">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Hero section -->
+      <div
+        class="
+          hero-section
+          w-10/12
+          mx-auto
+          flex
+          justify-between
+          py-5
+          items-center
+        "
+      >
+        <div class="hero-text grid gap-y-4">
+          <h1 class="text-5xl text-yellow-400 font-bold uppercase">
+            Be the Penguins <br />
+            <span class="text-gray-600">of Winter</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit consectetur adipisicing <br />
+            elit Saepe, sit Autem.
+          </p>
+          <div class="hero-btn">
+            <button
+              class="
+                uppercase
+                bg-green-400
+                text-white
+                px-7
+                py-3
+                font-medium
+                rounded-md
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 inline"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img class="ml-16" width="420" src="images/model.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="product py-10">
+        <div class="women-jacket w-10/12 mx-auto">
+          <h2 class="uppercase text-4xl font-medium text-gray-700">
+            women jacket
+          </h2>
+          <div class="product-items grid grid-cols-3 gap-14 mt-5">
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-1.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="right-nav flex gap-10 font-medium text-gray-700">
-                <a href="#" class="menu-item">Home</a>
-                <a href="#" class="menu-item">Product</a>
-                <a href="#" class="menu-item">About Us</a>
-                <a href="#" class="menu-item">Contact Us</a>
+
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-2.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+                </div>
+              </div>
             </div>
+
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-3.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Hero section -->
-        <div class="hero-section w-10/12 mx-auto flex py-5 items-center">
-            <div class="hero-text grid gap-y-4">
-                <h1 class="text-5xl text-yellow-400 font-bold uppercase">Be the Penguins <br> <span class="text-gray-600">of Winter</span> </h1>
-                <p>Lorem ipsum dolor, sit consectetur adipisicing  <br> elit Saepe, sit Autem.</p>
-                <div class="hero-btn">
-                    <button class="uppercase bg-green-400 text-white px-7 py-3 font-medium rounded-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                          </svg>
-                        Buy Now
-                    </button>
+        <div class="men-jacket w-10/12 mx-auto mt-12">
+          <h2 class="uppercase text-4xl font-medium text-gray-700">
+            man jacket
+          </h2>
+          <div class="product-items grid grid-cols-3 gap-14 mt-5">
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-4.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
                 </div>
+              </div>
             </div>
-            <div class="hero-img">
-                <img class="ml-16" width="420" src="images/model.png" alt="">
+
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-5.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+                </div>
+              </div>
             </div>
+
+            <div class="product-item p-5 shadow-2xl rounded-xl space-y-4">
+              <div class="product-img bg-gray-200 rounded-xl py-5">
+                <img class="mx-auto" src="images/jacket-6.png" alt="" />
+              </div>
+              <h4 class="product-title text-2xl font-medium text-gray-700">
+                Yellow Coat Jacket
+              </h4>
+              <p class="product-description text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="product-bottom flex justify-between">
+                <h3 class="text-3xl font-black text-yellow-400">$234</h3>
+                <div class="product-btn">
+                  <button
+                    class="
+                      uppercase
+                      bg-green-400
+                      text-white
+                      px-4
+                      py-2
+                      font-medium
+                      rounded-md
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                      />
+                    </svg>
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
